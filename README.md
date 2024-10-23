@@ -16,5 +16,5 @@ brew install --cask mactex
 
 Convert a notebook to pdf with:
 ```shell
-jupyter-nbconvert --to pdf path_to_notebook.ipynb
+pandoc --to pdf --from ipynb path_to_notebook.ipynb -o path_to_output_file.pdf
 ```
