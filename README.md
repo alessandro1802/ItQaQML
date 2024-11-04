@@ -16,5 +16,5 @@ brew install --cask mactex
 
 Convert a notebook to pdf with:
 ```shell
-pandoc --to pdf --from ipynb path_to_notebook.ipynb -o path_to_output_file.pdf
+pandoc --pdf-engine=lualatex --to pdf --from ipynb path_to_notebook.ipynb -o path_to_output_file.pdf
 ```
